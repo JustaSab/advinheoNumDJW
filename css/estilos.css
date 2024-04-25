@@ -73,3 +73,7 @@ p{
     font-size:20px;
     text-align:center;
 }
+
+#jogar{
+cursor: pointer;
+}

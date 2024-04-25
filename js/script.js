@@ -104,3 +104,17 @@ function fimJogo(){
 
 
 }
+
+function iniciarJogo(){
+    const botaoIniciar = document.querySelector('iniciarJogada')
+    botaoIniciar.addEventListener('click', function(){
+        randomNumber = parseInt(Math.random()*100+1)
+        numeroJogados = []
+        minhasJogadas = 1
+        jogadasAnteriores.innerHTML= ''
+        avisos.innerHTML = ''
+        jogadasRestantes.innerHTML = `${ 7 - minhasJogadas}`
+        jogada.removeAttribute('disabled','')
+        submit.removeAttribute('disabled','')
+    })
+}
